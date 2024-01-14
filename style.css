@@ -21,6 +21,7 @@ img{
 }
 
 body{
+    font-family: 'Lexend', sans-serif;
     font-size: 16px;
     line-height: 24px;
     background-color: #202020;
@@ -30,3 +31,381 @@ body{
     width: 1170px;
     margin:auto;
 }
+
+/* header */
+
+.header-area{
+    padding: 25px 0px;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size:26px;
+    font-weight:700;
+}
+
+.header ul{
+    display:flex;
+}
+
+.header ul li{
+    margin:0px 15px;
+}
+
+.header ul li a{
+    text-transform: capitalize;
+    display:block;
+}
+
+.header ul li a:hover{
+    color:#ffbd36;
+}
+
+/* banner */
+.banner-area{
+    padding:80px 0px;
+    background-position: center;
+    background-size:cover;
+}
+
+.banner{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#fff;
+}
+
+.banner-content h5{
+    font-size: 22px;
+    font-weight:700px;
+}
+
+.banner-content h2{
+    font-size:50px;
+    line-height:80px;
+    text-transform: uppercase;
+}
+
+.banner-content h2 span{
+    color:#ffbd36;
+}
+
+.banner-content p{
+    max-width: 600px;
+    margin:20px 0px;
+}
+
+.btn{
+    display:inline-block;
+    background-color: #ffbd36;
+    border-radius:3px;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size:18px;
+}
+
+.btn:hover{
+    background-color:#333;
+    border-color:#ffbd36;
+    color:#ffbd36;
+}
+
+.banner-img img{
+    background-color: #ffbd36;
+    padding:20px;
+    border-radius: 50%;
+}
+
+/* About section*/
+.about-area{
+    padding: 100px 0px;
+    background-color: #2a2a2a;
+}
+
+.about{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.about-content{
+    flex-basis: 65%;
+}
+
+.about-content h4{
+    color:#ffbd36;
+    font-size:40px;
+    line-height: 70px;
+}
+
+.about-content p{
+    color:#fff;
+    margin-bottom: 10px;
+}
+
+.about-skills{
+    flex-basis:30%;
+}
+
+.about-skills ul li{
+    border-bottom: 1px dashed #ddd;
+    padding-bottom:10px;
+    margin-bottom: 10px;
+    color:#fff;
+    font-size:18px;
+}
+
+.about-skills ul li:last-child{
+    border-bottom: 0;
+    padding-bottom:0;
+    margin-bottom:0;
+}
+
+/* section-title */
+.section-title{
+    margin-bottom:60px;
+    text-align:center;
+}
+
+.section-title h4{
+    text-transform:uppercase;
+    font-size:40px;
+    line-height:40px;
+    color:#ffbd36;
+    margin-bottom:20px;
+}
+
+.section-title p{
+    color:white;
+}
+
+
+/*projects */
+.projects-area{
+    padding: 100px 0px;
+    background-color:#333;
+}
+
+.projects{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.single-project{
+    height:300px;
+    background-position:center;
+    background-size:cover;
+    position:relative;
+    z-index:2;
+    flex-basis:32%;
+    margin: 15px 0px;
+}
+
+.project-content{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height:100%;
+    z-index:2;
+    color:#fff;
+    opacity:0;
+    visibility:hidden;
+    transition: 0.3s;
+}
+
+.project-content.before{
+    position: absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    background-color:#202020;
+    left:0;
+    top:0;
+    opacity:0.75;
+    z-index:-1;
+}
+
+.project-content h4{
+    font-size:26px;
+    text-transform:capitalize;
+    text-align:center;
+}
+
+.project-content h4 span{
+    display:block;
+    font-size:18px;
+    margin-top:5px;
+}
+
+.single-project:hover .project-content{
+    opacity:1;
+    visibility: visible;
+}
+
+
+
+
+
+.header-area.sticky{
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    z-index:1000;
+    background-color:#333;
+    padding:20px 0px;
+    }
+    
+    .header{
+    display:flex;
+    justify-content:space-between;
+    opacity:1;
+    visibility:visible;
+    }
+    
+    /* Resume section*/
+    .resume-area{
+    padding: 100px 0px;
+    background-color: #333;
+    }
+    
+    .resume embed{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    }
+    
+    /* Contact Us*/
+    .contact-area{
+    padding: 100px 0px;
+    }
+    
+    .contact{
+    max-width:700px;
+    margin:auto;
+    }
+    
+    .contact input, .contact textarea{
+    width:100%;
+    padding:15px;
+    border:0;
+    margin-bottom:10px;
+    }
+    
+    .contact input[type="submit"] {
+    width:auto;
+    background-color:#ffbd36;
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size:18px;
+    cursor:pointer;
+    }
+    
+    /* Footer */
+    .footer-area{
+    background-color: #2a2a2a;
+    padding: 60px 0px;
+    text-align:center;
+    }
+    
+    .footer-area a{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    font-size:18px;
+    line-height:40px;
+    border: 1px solid #ddd;
+    border-radius:50%;
+    margin: 0px 10px; 
+    }
+    
+    .footer-area a:hover{
+    border-color:#ffbd36;
+    color:#ffbd36;
+    }
+    
+    .menu-icon i{
+    color:#fff;
+    font-size:25px;
+    cursor:pointer;
+    display:none;
+    }
+    
+    /* Medium screens */
+    @media only screen and (min-width: 992px) and (max-width: 1200px){
+    .container{
+    width:970px;
+    }
+    }
+    
+    /* Tablet screens */
+    @media only screen and (min-width: 768px) and (max-width: 991px){
+    .container{
+    width:750px;
+    }
+    }
+    
+    /* Mobile screens */
+    @media only screen and (max-width: 767px){
+    .container{
+    width:350px;
+    }
+    
+    .menu-icon i{
+    /* display:block; */
+    display:none;
+    }
+    
+    .header ul{
+    position:absolute;
+    flex-direction:column;
+    background-color:#333;
+    width:100%;
+    left:0;
+    top:70px;
+    z-index:99;
+    padding:10px;
+    display:none;
+    }
+    
+    .header ul.show {
+    top:90px;
+    }
+    
+    .header ul li a{
+    padding:5px;
+    }
+    
+    .banner, .about{
+    flex-direction:column;
+    }
+    
+    .banner-content, .about{
+    flex-basis:100%;
+    margin-bottom: 30px;
+    }
+    
+    .about-skills{
+    width:100%;
+    margin-top:30px;
+    }
+    
+    .single-project{
+    flex-basis:100%;
+    margin-bottom:30px;
+    }
+    
+    .resume-area{
+    display:none;
+    }
+    }
