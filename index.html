@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>benjaminwang42/Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-area">
+        <div class="container">
+            <div class="header">
+                <a href="" class="logo">Benjamin H. Wang</a>
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#resume">resume</a></li>
+                    <!-- <li><a href="#contact">contact</a></li> -->
+                </ul>
+                <div class="menu-icon">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </div>
+    </header>   
+
+    <section class="banner-area" style="background-image: url('Assets/background.jpg');" id="home">
+        <div class="container">
+            <div class="banner">
+                <div class="banner-content">
+                    <h5>Hello, I'm</h5>
+                    <h2>Benjamin <span>Wang</span></h2>
+                    <h5><span class="element"></span></h5>
+                    <p>I am a first-year Computer Science student at the University of Waterloo. This website about me was created using HTML, CSS, and Javascript. </p>
+                    <a href="#resume" class="btn">My Resume</a>
+                </div>
+                <div class="banner-img">
+                    <img src="Assets/lakepic3.png" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-area" id="about">
+        <div class="container">
+            <div class="about">
+                <div class="about-content">
+                    <h4>About Me</h4>
+                    <p> My name is Benjamin, and I am a first year computer science student at the University of Waterloo.</p>
+                    <p>Outside of programming, my hobbies include memorizing digits of pi, running, and soccer, with my newest addition being weightlifting. I am gradually working towards benching the fabled 225. </p>
+                    <p>If you have any questions or would like to chat, feel free to reach out through email or discord!</p>
+                </div>
+                <div class="about-skills">
+                    <ul>
+                        <li>Name: Benjamin H. Wang</li>
+                        <li>Availability: Looking for Summer 2024 co-ops</li>
+                        <li>Program: Computer Science at the University of Waterloo</li>
+                        <li>From: Toronto, Ontario</li>
+                        <li >Email: <a href="mailto:benjaminwang42@gmail.com" style="text-decoration: underline;">benjaminwang42@gmail.com</a></li>
+                        <li>Discord: hfgjghgg</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-area" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h4>latest projects</h4>
+                <p>My latest projects below consist of a React App used for a family practice clinic, a shopping web app that displays optimal shopping locations by filtering on factors such as product, distance, and price, and a website where one can play the classic game of blackjack. Click on the icons for the Github repositories to learn more! </p>
+            </div>
+            <div class="projects">
+                <div class="single-project" style="background-image: url('Assets/awLogo.png')">
+                    <a href="https://github.com/benjaminwang42/AWFamilyMedicine/tree/secondary" target="_blank">
+                        <div class="project-content">
+                            <h4>AWFamilyMed <span>December 2023</span></h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="single-project" style="background-image: url('Assets/OptimalShopperLogo.png')">
+                    <a href="https://github.com/vincentjsun/OptimalShopper" target="_blank">
+                        <div class="project-content">
+                            <h4>Optimal Shopper <span>July 2023</span></h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="single-project" style="background-image: url('Assets/blackjack.png')">
+                    <a href="https://github.com/benjaminwang42/Blackjackv2" target="_blank">
+                        <div class="project-content">
+                            <h4>Blackjack <span>April 2023</span></h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="resume-area" id="resume">
+            <div class="container">
+                <div class="section-title">
+                    <h4>resume</h4>
+                </div>
+                <div class="resume">
+                    <embed src="Assets/resume.pdf#toolbar=0" type="application/pdf" width="70%" height="900px"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="contact-area" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h4>Contact Me</h4>
+                <p></p>
+            </div>
+            <div class="contact">
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message"></textarea>
+                    <input type="submit" value="Send Message">
+
+                </form>
+            </div>
+        </div>
+    </section> -->
+
+    <footer class="footer-area">
+        <div class="container">
+            <a href="https://www.linkedin.com/in/benjamin-wang-51a228227/"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/benjaminwang42"><i class='bx bxl-github' ></i></a>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>
