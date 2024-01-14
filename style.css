@@ -173,6 +173,7 @@ body{
 .section-title{
     margin-bottom:60px;
     text-align:center;
+    color:#fff;
 }
 
 .section-title h4{
@@ -181,10 +182,6 @@ body{
     line-height:40px;
     color:#ffbd36;
     margin-bottom:20px;
-}
-
-.section-title p{
-    color:white;
 }
 
 
@@ -223,7 +220,7 @@ body{
     transition: 0.3s;
 }
 
-.project-content.before{
+.project-content:before{
     position: absolute;
     content:"";
     width:100%;
