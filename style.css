@@ -184,6 +184,127 @@ body {
   margin-bottom: 20px;
 }
 
+/* experience section */
+.experience-area {
+  padding: 100px 0px;
+  background-color: #202020;
+}
+
+.timeline-section {
+  position: relative;
+  padding: 64px 0;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 920px;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    #ffbd36 0%,
+    #ef4444 35%,
+    #a855f7 65%,
+    #3b82f6 100%
+  );
+}
+
+.timeline-items {
+  padding: 0 16px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-item.left {
+  justify-content: flex-start;
+  padding-right: 24px;
+}
+
+.timeline-item.right {
+  justify-content: flex-end;
+  padding-left: 24px;
+}
+
+.content-wrapper {
+  width: 50%;
+  padding: 16px 0;
+}
+
+.timeline-item.right .content-wrapper {
+  text-align: right;
+}
+
+.card {
+  padding: 32px;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background: #202020;
+  border-radius: 50%;
+}
+
+.company-logo {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: block;
+}
+
+.company-name {
+  font-size: clamp(0.75rem, 1.5vw, 1.75rem);
+  font-weight: bold;
+  margin: 0;
+}
+
+.date-text {
+  display: block;
+  margin-top: 8px;
+  font-size: clamp(0.65rem, 1.2vw, 1rem);
+}
+
+.job-title {
+  margin-top: 16px;
+  font-size: clamp(0.6rem, 1.2vw, 1rem);
+}
+
+.arrow {
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.timeline-item.left .arrow {
+  right: -10px;
+  border-left: 10px solid #121212;
+}
+
+.timeline-item.right .arrow {
+  left: -10px;
+  border-right: 10px solid #121212;
+}
+
 /*projects */
 .projects-area {
   padding: 100px 0px;
@@ -263,18 +384,6 @@ body {
   justify-content: space-between;
   opacity: 1;
   visibility: visible;
-}
-
-/* Resume section*/
-.resume-area {
-  padding: 100px 0px;
-  background-color: #333;
-}
-
-.resume embed {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Contact Us*/
@@ -398,9 +507,5 @@ body {
   .single-project {
     flex-basis: 100%;
     margin-bottom: 30px;
-  }
-
-  .resume-area {
-    display: none;
   }
 }
