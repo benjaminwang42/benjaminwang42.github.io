@@ -1,37 +1,17 @@
-$(document).ready(function() {
-
-    var options = {
-      strings: ['Programmer', 'Athlete', 'Computer Science Student @uWaterloo'],
-      typeSpeed: 60,
-      loop:true
-    };
-
-    var typed = new Typed('.element', options);
-
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-            $('.header-area').addClass('sticky');
-        } else {
-            $('.header-area').removeClass('sticky');
-        }
+const navLinks = document.querySelectorAll('.header ul a');
+const sections = document.querySelectorAll('section[id], .experience-area[id]');
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        navLinks.forEach((link) => {
+          const active = link.getAttribute('href') === `#${entry.target.id}`;
+          link.classList.toggle('active', active);
+          if (active) link.setAttribute('aria-current', 'location');
+          else link.removeAttribute('aria-current');
+        });
+      }
     });
-
-    ScrollReveal({
-        distance: '100px',
-        duration:2000,
-        delay:200
-    });
-
-    ScrollReveal().reveal('.header a, .banner-content, .about-content',  {origin: 'left'});
-    ScrollReveal().reveal('.header ul, .banner-img, .about-skills', {origin: 'right'});
-    ScrollReveal().reveal('.section-title', {origin: 'top'});
-    ScrollReveal().reveal('.projects, .contact, .footer-area', {origin: 'bottom'});
-
-    let menu_icon = document.querySelector('.menu-icon i')
-    let menu_list = document.querySelector('.header ul')
-
-    menu_icon.onClick = () => {
-        menu_icon.classList.toggle('bx-x');
-        menu_list.classList.toggle('show');
-    }
-});
+  }, { rootMargin: '-15% 0px -55% 0px' });
+  sections.forEach((section) => observer.observe(section));
+}
